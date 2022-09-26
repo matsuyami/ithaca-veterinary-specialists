@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Header } from '../components/header/Header'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -55,6 +56,27 @@ export default function Home() {
           <hr className={styles.rule}/>
           <a className={styles.services__moreLink} href='#'>View more services</a>
         </div>
+
+        <section className={styles.learn}>
+          <picture className={styles.learn__image}>
+            <Image 
+            className={styles.learn__image}
+            width={400}
+            height={400}
+            src='/images/flower_dog.jpg'/>
+          </picture>
+          <div className={styles.learn__info}>
+            <h2 className={styles.learn__header}>We <span className={styles.learn__love}>Love</span> our patients!</h2>
+            <p className={styles.learn__text}> 
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry&apos;s 
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry&apos;s 
+            </p>
+            <hr className={styles.learn__rule} />
+            <button className={styles.learn__button}> CONTACT </button>
+          </div>
+        </section>
         </main>
         <footer className={styles.footer}>
           <iframe className={styles.footer__directions} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.6381341402694!2d-76.38535528475767!3d42.477984379179055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89da790217f25afd%3A0x9cc0e78372657b79!2sElemental%20Pet%20Vets!5e0!3m2!1sen!2sus!4v1663957135338!5m2!1sen!2sus" 

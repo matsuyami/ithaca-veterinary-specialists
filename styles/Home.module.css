@@ -27,11 +27,10 @@
     display: flex;  
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    justify-content: space-between;
     background-color: var(--primary-clr);
     color: var(--white);
-    padding: 2rem 3rem 2rem 3rem;
   }
 
   .service {
@@ -49,6 +48,85 @@
   .service__info {
     min-width: 300px;
   }
+
+  .rule {
+    margin: 0 auto;
+    border-color: var(--white);
+    width: 80%;
+    margin-bottom: var(--spacer-lg);
+  }
+
+  .services__more {
+    background-color: var(--primary-clr);
+    font-weight: var(--fw-bold);
+    color: var(--white);
+    padding-bottom: var(--spacer-lg);
+    padding-top: var(--spacer-lg);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .services__moreLink:hover{
+    border-bottom: 2px solid var(--white);
+  }
+
+  .learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .learn__image {
+    max-width: 90%;
+    margin: var(--spacer-lg);
+    border-radius: 0.625rem;
+  }
+
+  .learn__info {
+    text-align: center;
+  }
+
+  .learn__header {
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  .learn__love{
+    border-bottom: 0.3em solid var(--blue);
+  }
+
+  .learn__text {
+    padding: 0 var(--spacer-lg);
+    text-align: center;
+    margin-bottom: var(--spacer-lg);
+    max-lines: 2;
+  }
+
+  .learn__rule {
+    max-width: 80%;
+    border-color: var(--primary-clr);
+  }
+
+  .learn__button {
+    padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
+    font-weight: var(--fw-bold);
+    background-color: var(--primary-clr);
+    color: var(--white);
+    border: 0;
+    border-radius: var(--br);
+    margin-top: var(--spacer-lg);
+    cursor: pointer;
+  }
+
+  .learn__button:hover{
+    background-color: var(--blue);
+  }
+
     
   .footer {
     display: flex;
@@ -88,36 +166,20 @@
     color: var(--white);
   }
 
-  .rule {
-    margin: 0 auto;
-    border-color: var(--white);
-    width: 80%;
-    margin-bottom: var(--spacer-lg);
-  }
-
-  .services__more {
-    background-color: var(--primary-clr);
-    font-weight: var(--fw-bold);
-    color: var(--white);
-    padding-bottom: var(--spacer-lg);
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
-    width: 100%;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .services__moreLink:hover{
-    border-bottom: 2px solid var(--white);
-  }
-
   @media screen and (min-width:612px){
     .services {
+      flex-wrap: wrap;
       flex-direction: row;
     }
 
     .service {
-      max-width: 485px;
+      max-width: 400px;
+    }
+
+    .learn {
+      flex-direction: row;
+    }
+    .learn__text {
+      max-width: 650px;
     }
   }
-  
