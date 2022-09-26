@@ -45,6 +45,10 @@
     border-radius: 50%;
     margin: var(--spacer-md);
   }
+
+  .service__info {
+    min-width: 300px;
+  }
     
   .footer {
     display: flex;
