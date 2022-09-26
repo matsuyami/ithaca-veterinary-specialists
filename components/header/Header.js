@@ -36,7 +36,10 @@ export const Header = () => {
               </a>
             </span>      
             <span className={styles.header__info}>
-              <a className={styles.header__link} href='https://goo.gl/maps/mGi5wzrVjgPJRoVc6' target='_blank'>
+              <a className={styles.header__link} href='https://goo.gl/maps/mGi5wzrVjgPJRoVc6' 
+              target='_blank'
+              rel="noreferrer"
+              >
                 <svg className={styles.header__icon} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" 
                         d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" 
@@ -56,15 +59,14 @@ export const Header = () => {
                 <nav className={styles.nav}>  
                   <ul className={styles.nav__list}>
                     <li><a href='#'>Home</a></li>
-                    <li className={styles.nav__nestedItem}><a href='#'>About</a>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li className={styles.nav__nestedItem}><a href='#'>Resources</a>
                         <ul className={styles.nav__nested}>
-                          <li><a href='#'>Home</a></li>
-                          <li><a href='#'>About</a></li>
-                          <li><a href='#'>Services</a></li>
+                          <li><a href='#'>New Client</a></li>
+                          <li><a href='#'>Referral Form</a></li>
                         </ul>
                     </li>
-                    <li><a href='#'>Services</a></li>
-                    <li><a href='#'>Resources</a></li>
                     <li><a href='#'>Contact</a></li>
                   </ul>
                 </nav> 
