@@ -1,0 +1,38 @@
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-clr);
+    color: var(--white);
+    font-weight: var(--fw-bold);
+  }
+  
+  .footer__directions {
+    min-height: 400px;
+  }
+  
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer__header {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+  }
+  
+  .footer__hours {
+    width: 270px;
+  }
+  
+  .footer__day {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__contact {
+    color: var(--white);
+  }
