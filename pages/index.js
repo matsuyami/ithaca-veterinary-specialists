@@ -65,7 +65,6 @@ export default function Home() {
             width={518}
             height={388}
             src='/images/flower_dog.jpg'/>
-            alt='dog'
           </picture>
           <div className={styles.learn__info}>
             <h2 className={styles.learn__header}>We <span className={styles.learn__love}>Love</span> our patients!</h2>
