@@ -39,6 +39,10 @@ a, Link {
   text-decoration: none;
 }
 
+button {
+  letter-spacing: 4px;
+}
+
 * {
   box-sizing: border-box;
 }

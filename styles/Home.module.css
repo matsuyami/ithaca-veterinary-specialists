@@ -52,7 +52,7 @@
   .rule {
     margin: 0 auto;
     border-color: var(--white);
-    width: 80%;
+    width: 60%;
     margin-bottom: var(--spacer-lg);
   }
 
@@ -81,8 +81,7 @@
   }
 
   .learn__image {
-    max-width: 90%;
-    margin: var(--spacer-lg);
+    margin: var(--spacer-md);
     border-radius: 0.625rem;
   }
 
@@ -120,14 +119,65 @@
     border: 0;
     border-radius: var(--br);
     margin-top: var(--spacer-lg);
+    margin-bottom: var(--spacer-lg);
     cursor: pointer;
+    text-transform: uppercase;
   }
 
   .learn__button:hover{
     background-color: var(--blue);
   }
 
-    
+  .banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-image: url('/images/teapot_dog.jpg');
+    min-height: 500px;
+    padding: 3rem;
+    z-index: 100;
+    font-weight: var(--fw-bold);
+  }
+
+  .banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+  }
+
+  .visit {
+    color: var(--white);
+  }
+
+  .visit__header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .visit__paragraph {
+    max-width: 430px;
+  }
+
+  .visit__button {
+    padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
+    font-weight: var(--fw-bold);
+    background-color: var(--blue);
+    color: var(--white);
+    border: 0;
+    border-radius: var(--br);
+    margin-top: var(--spacer-lg);
+    margin-bottom: var(--spacer-lg);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .visit__button:hover {
+    background-color: var(--primary-clr);
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -181,5 +231,21 @@
     }
     .learn__text {
       max-width: 650px;
+    }
+  }
+
+  @media screen and (min-width: 1280px){
+    .banner {
+      background-position: 50% 30%;
+    }
+  }
+  @media screen and (min-width: 1770px){
+    .visit__paragraph {
+      max-width: 700px;
+    }
+
+    .visit__header {
+      letter-spacing: 6px;
+      font-size: 2rem;
     }
   }
