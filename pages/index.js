@@ -65,6 +65,7 @@ export default function Home() {
             width={518}
             height={388}
             src='/images/flower_dog.jpg'/>
+            alt='dog'
           </picture>
           <div className={styles.learn__info}>
             <h2 className={styles.learn__header}>We <span className={styles.learn__love}>Love</span> our patients!</h2>
@@ -83,8 +84,8 @@ export default function Home() {
               <h2 className={styles.visit__header}>Ready for a visit?</h2>
               <p className={styles.visit__paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the 
-              printing and typesetting industry. Lorem Ipsum has been the industry's
+              Lorem Ipsum has been the industry&apos;s Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
               </p>
               <button className={styles.visit__button}> Appointment</button>
             </section>
