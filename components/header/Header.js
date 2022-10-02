@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 
 export const Header = () => {
 
-  const checkWindowWidth = () => {
+  const useWindowWidth= () => {
     const [width, setWidth] = useState(0)
     useEffect( () => {
       const isLaptopSize = window.innerWidth > 1024 ? true : false
@@ -15,7 +15,7 @@ export const Header = () => {
   }
 
   const [isOpen, setIsOpen] = useState(false)
-  checkWindowWidth()
+  useWindowWidth()
 
   const hamburgerToggle = isOpen 
     ? `${styles.nav__toggle} ${styles['open']}` 
