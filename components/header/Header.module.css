@@ -129,5 +129,29 @@
       flex-direction: row;
       justify-content: space-around;
     }
+  }
 
+  @media screen and (min-width: 1024px){
+    .header__navigation {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav__list {
+      position: unset;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .nav__nested {
+      display: none;
+    }
+
+    .nav__nestedItem > a {
+      background-color: rgba(0,0,0,0);
+    }
+
+    .hamburger {
+      display: none;
+    }
   }

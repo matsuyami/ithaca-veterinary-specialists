@@ -1,10 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './Header.module.css'
 
 export const Header = () => {
 
+  const checkWindowWidth = () => {
+    const [width, setWidth] = useState(0)
+    useEffect( () => {
+      const isLaptopSize = window.innerWidth > 1024 ? true : false
+      setWidth(window.innerWidth)
+      setIsOpen(isLaptopSize)
+    }, [setWidth])
+    return width  
+  }
+
   const [isOpen, setIsOpen] = useState(false)
+  checkWindowWidth()
 
   const hamburgerToggle = isOpen 
     ? `${styles.nav__toggle} ${styles['open']}` 
