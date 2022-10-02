@@ -41,6 +41,7 @@
   
   .header__logo {
     max-width: 150px;
+    margin-left: 2rem;
   }
   
   .nav__list{

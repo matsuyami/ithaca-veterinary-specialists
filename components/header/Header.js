@@ -62,10 +62,12 @@ export const Header = () => {
           </div>
     
             <div className={styles.header__navigation}>
-              <Image className={styles.header__logo} 
-              width={150}
-              height={75}
-              src='/images/logo.png' alt='logo'/>        
+              <div className={styles.header__logo}>
+                <Image 
+                width={150}
+                height={75}
+                src='/images/logo.png' alt='logo'/>        
+              </div>
               {isOpen && 
                 <nav className={styles.nav}>  
                   <ul className={styles.nav__list}>
