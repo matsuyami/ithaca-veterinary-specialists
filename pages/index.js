@@ -10,10 +10,10 @@ export default function Home() {
       <Header/>
         <main>
           <div className={styles.hero}>
-            <video className={styles.hero__video} playsInline='' autoPlay={true} muted={true} loop={true}>
+            <video className={styles.hero__video} preload='none' playsInline='' autoPlay='autoplay' muted={true} loop={true}>
               <source src="/video/dog_grass.mp4" type="video/mp4"/>
-              <a href="/video/dog_grass.mp4">MP4</a>
-              video.
+              <source src="/video/dog_grass.webm" type="video/webm"/>
+              Your browser does not support this video file.
             </video>
           </div>
 
