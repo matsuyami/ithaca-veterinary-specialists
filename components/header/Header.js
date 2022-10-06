@@ -7,9 +7,14 @@ export const Header = () => {
   const useWindowWidth= () => {
     const [width, setWidth] = useState(0)
     useEffect( () => {
-      const isLaptopSize = window.innerWidth > 1024 ? true : false
-      setWidth(window.innerWidth)
-      setIsOpen(isLaptopSize)
+      function handleResize() {
+        const isLaptopSize = window.innerWidth > 1024 ? true : false
+        setWidth(window.innerWidth)
+        setIsOpen(isLaptopSize)
+      }
+
+      window.addEventListener('resize', handleResize)
+      handleResize()
     }, [setWidth])
     return width  
   }
