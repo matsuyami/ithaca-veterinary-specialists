@@ -176,3 +176,10 @@
       display: none;
     }
   }
+
+  @media screen and (min-width:2000px){
+    .nav__list {
+      min-width: 45vw;
+      justify-content: space-between;
+    }
+  }
