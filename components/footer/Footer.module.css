@@ -22,6 +22,8 @@
   .footer__header {
     text-transform: uppercase;
     letter-spacing: 2.5px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
   
   .footer__hours {

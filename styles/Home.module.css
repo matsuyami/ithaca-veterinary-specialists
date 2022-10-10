@@ -49,6 +49,11 @@
     min-width: 300px;
   }
 
+  .service__info > h2 { 
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .rule {
     margin: 0 auto;
     border-color: var(--white);

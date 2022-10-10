@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './Header.module.css'
+import Link from 'next/link'
 
 export const Header = () => {
 
@@ -28,6 +29,7 @@ export const Header = () => {
 
   const handleClick = event => {
     event.preventDefault()
+    console.log('clicked')
     setIsOpen(current => !current)
   }
 
@@ -77,7 +79,11 @@ export const Header = () => {
                 <nav className={styles.nav}>  
                   <ul className={styles.nav__list}>
                     <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
+                    <li>
+                      <Link href='/about'>
+                        <a>About</a>
+                      </Link>
+                    </li>
                     <li><a href='#'>Services</a></li>
                     <li className={styles.nav__nestedItem}><a href='#'>Resources</a>
                         <ul className={styles.nav__nested}>
