@@ -6,9 +6,10 @@ export default function About(){
       <>
           <Header/>
           <section className={styles.banner} style={{ backgroundImage: `url(/images/wilderness_dog.jpg)`}}>
-            <div className={styles.banner__text}>
+            <div className={styles.banner__info}>
               <h1 className={styles.banner__header}>About Us</h1>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              <div className={styles.banner__text}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+              <button className={styles.banner_button}>Contact</button>
             </div>
           </section>
       </>

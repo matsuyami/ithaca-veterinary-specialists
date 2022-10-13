@@ -117,7 +117,6 @@
   }
 
   .learn__button {
-    padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
     font-weight: var(--fw-bold);
     background-color: var(--primary-clr);
     color: var(--white);
@@ -131,6 +130,11 @@
 
   .learn__button:hover{
     background-color: var(--blue);
+  }
+
+  .learn__button > a {
+    display: inline-block;
+    padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
   }
 
   .banner {
@@ -181,6 +185,10 @@
 
   .visit__button:hover {
     background-color: var(--primary-clr);
+  }
+
+  .visit__button > a {
+    padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
   }
 
   @media screen and (min-width:612px){

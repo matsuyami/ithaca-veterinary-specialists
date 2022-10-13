@@ -3,6 +3,8 @@ import { Header } from '../components/header/Header'
 import { Footer } from '../components/footer/Footer'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import { Button } from '../components/button/Button'
 
 export default function Home() {
   return (
@@ -75,7 +77,10 @@ export default function Home() {
                 typesetting industry. Lorem Ipsum has been the industry&apos;s 
             </p>
             <hr className={styles.learn__rule} />
-            <button className={styles.learn__button}> CONTACT </button>
+            <Button url='/about' backgroundColor={'var(--primary-clr)'} color={'var(--white'} 
+              hoverColor={'var(--blue)'}>
+                Contact
+            </Button>
           </div>
         </section>
           <div className={styles.banner}>
@@ -86,7 +91,10 @@ export default function Home() {
               Lorem Ipsum has been the industry&apos;s Lorem Ipsum is simply dummy text of the 
               printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
               </p>
-              <button className={styles.visit__button}> Appointment</button>
+            <Button url='/appointment' backgroundColor={'var(--blue)'} color={'var(--white'} 
+              hoverColor={'var(--primary-clr)'}>
+                Contact
+            </Button>
             </section>
           </div>
         </main>

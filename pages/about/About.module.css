@@ -5,9 +5,9 @@
   background-repeat: no-repeat;
 }
 
-.banner__text {
+.banner__info {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 10vw;
   margin: auto;
   transform: translateY(-50%);
@@ -18,4 +18,9 @@
 
 .banner__header {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin-bottom: var(--spacer-md);
+}
+
+.banner__text {
+  margin-bottom: var(--spacer-md);
 }

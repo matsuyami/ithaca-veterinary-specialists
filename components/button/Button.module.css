@@ -1,0 +1,15 @@
+.button{
+  font-weight: var(--fw-bold);
+  border: 0;
+  border-radius: var(--br);
+  margin-top: var(--spacer-lg);
+  margin-bottom: var(--spacer-lg);
+  padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button > a {
+  height: 0;
+  width: 0;
+}
