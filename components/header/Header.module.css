@@ -80,6 +80,7 @@
   }
   
   .nav__list > .nav__nestedItem {
+    z-index: 999;
     padding-bottom: 0;
   }
   

@@ -2,7 +2,8 @@ import Link from "next/link"
 import { useState } from "react"
 import styles from './Button.module.css'
 
-export const Button = ({url='/#', 
+export const Button = ({
+  url='/#', 
   backgroundColor='var(--primary-clr)', 
   color='var(--white)', hoverColor='var(--blue)', children}) => {
 

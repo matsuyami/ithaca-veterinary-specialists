@@ -29,7 +29,6 @@ export const Header = () => {
 
   const handleClick = event => {
     event.preventDefault()
-    console.log('clicked')
     setIsOpen(current => !current)
   }
 
