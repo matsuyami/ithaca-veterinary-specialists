@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Footer } from '../../components/footer/Footer';
 import { Header } from '../../components/header/Header';
 import { Hero } from '../../components/hero/Hero';
@@ -11,6 +12,9 @@ export default function About(){
     }
     return (
       <>
+          <Head>
+            <title>Ithaca Veterinary Specialists | About </title> 
+          </Head>
           <Header/>
           <Hero title='About Us' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit. '
                 imageUrl='/images/wilderness_dog.jpg' buttonOptions={buttonOptions}/>

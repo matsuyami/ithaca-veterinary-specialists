@@ -9,6 +9,9 @@ import { Button } from '../components/button/Button'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Ithaca Veterinary Specialists</title> 
+      </Head>
       <Header/>
         <main>
           <div className={styles.hero}>

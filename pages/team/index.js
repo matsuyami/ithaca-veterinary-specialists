@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Header } from '../../components/header/Header'
 import { Footer } from '../../components/footer/Footer'
 import styles from './Team.module.css'
@@ -13,6 +14,9 @@ export default function Team() {
 
   return(
     <>
+      <Head>
+        <title>Ithaca Veterinary Specialists | Team </title> 
+      </Head>
       <Header/>
         <Hero title='Our Team' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit.' 
         imageUrl='/images/ithaca-staff-page-dog.jpg' backgroundPos='center' buttonOptions={buttonOptions}/>  

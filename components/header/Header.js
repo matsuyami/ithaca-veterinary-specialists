@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './Header.module.css'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export const Header = () => {
 
