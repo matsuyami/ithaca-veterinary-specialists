@@ -82,10 +82,17 @@ export const Header = () => {
                         <a href='#'>Home</a>
                       </Link>
                     </li>
-                    <li>
+                    <li className={styles.nav__nestedItem}>
                       <Link href='/about'>
                         <a>About</a>
                       </Link>
+                      <ul className={styles.nav__nested}>
+                        <li>
+                          <Link href='/team'>
+                            <a>Our Team</a>
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                     <li><a href='#'>Services</a></li>
                     <li className={styles.nav__nestedItem}><a href='#'>Resources</a>
