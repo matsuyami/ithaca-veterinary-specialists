@@ -10,6 +10,7 @@ export default function Team() {
     hoverColor: 'var(--primary-clr)',
     url: '/contact'
   }
+
   return(
     <>
       <Header/>

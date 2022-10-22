@@ -1,21 +1,27 @@
-.member {
-  width: 100%;
-}
-
 .member__container {
   display: grid;
   text-align: center;
   justify-content: center;
-  margin-top: var(--spacer-lg);
-  margin-bottom: var(--spacer-lg);
+  margin: var(--spacer-lg) auto;
+  max-width: 80%;
 }
 
-.member__image {
-  width: 270px;
-  height: auto;
-  object-fit: contain;
+/*
+.member{
+  padding: 0.05rem;
+  border: 1px solid lightgray;
   border-radius: 1rem;
+}
+*/
+
+.member__image {
+  max-width: 270px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 1.5rem;
   filter: drop-shadow(0 0 3px #333);
+  cursor: pointer;
 }
 
 .name {
@@ -26,4 +32,22 @@
 
 .title {
   color: gray;
+}
+
+@media screen and (min-width: 768px){
+  .member__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 968px){
+  .member__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .member__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
