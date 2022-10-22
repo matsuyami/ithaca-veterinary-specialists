@@ -1,19 +1,19 @@
-import { Button } from '../../components/button/Button';
 import { Footer } from '../../components/footer/Footer';
 import { Header } from '../../components/header/Header';
+import { Hero } from '../../components/hero/Hero';
 import styles from './About.module.css';
 
 export default function About(){
+    const buttonOptions = {
+      bg: 'var(--blue)',
+      hoverColor: 'var(--primary-clr)',
+      url: '/contact'
+    }
     return (
       <>
           <Header/>
-          <section className={styles.banner} style={{ backgroundImage: `url(/images/wilderness_dog.jpg)`}}>
-            <div className={styles.banner__info}>
-              <h1 className={styles.banner__header}>About Us</h1>
-              <div className={styles.banner__text}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
-              <Button url='/contact' backgroundColor={'var(--blue)'} hoverColor={'var(--primary-clr)'}>Contact</Button>
-            </div>
-          </section>
+          <Hero title='About Us' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit. '
+                imageUrl='/images/wilderness_dog.jpg' buttonOptions={buttonOptions}/>
           <section className={styles.aboutInfo}>
             <h2 className={styles.aboutInfo__header}> Lorem la ipsum le dolor sit ame </h2>
             <div className={styles.aboutInfo__content}> 
