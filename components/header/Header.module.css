@@ -10,6 +10,7 @@
     justify-content: center;
     text-align: center;
     min-width: 254px;
+    margin-top: var(--spacer-sm); 
   }
   
   .header__link{
@@ -18,6 +19,7 @@
 
   .header__icon{
     max-height: 20px;
+    max-width: 20px;
     fill: var(--white);
     margin-right: var(--spacer-xs);
     vertical-align: middle;
