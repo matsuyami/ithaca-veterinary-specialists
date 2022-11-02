@@ -19,7 +19,7 @@ export default function Team() {
       </Head>
       <Header/>
         <Hero title='Our Team' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit.' 
-        imageUrl='/images/ithaca-staff-page-dog.jpg' backgroundPos='center' buttonOptions={buttonOptions}/>  
+        imageUrl='/images/ithaca-staff-page-dog.webp' backgroundPos='center' buttonOptions={buttonOptions}/>  
         <Member/>
       <Footer/>
     </>
