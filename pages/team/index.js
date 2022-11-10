@@ -21,25 +21,20 @@ export default function Team(){
       <Header/>
         <Hero title='Our Team' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit.' 
         imageUrl='/images/ithaca-staff-page-dog.webp' backgroundPos='center' buttonOptions={buttonOptions}/>  
-        {/* {memberData && memberData.map(data => (
+        {memberData && memberData.map(data => (
           <Member key={data._id} memberData={data}/>
         ))
-        } */}
+        }
         <Footer/>
     </>
   )
 }
 
 export async function getStaticProps() {
-  // const members = await fetchMembers()
-  // return {
-  //   props: {
-  //     memberData: members
-  //   }
-  // }
+  const members = await fetchMembers()
   return {
     props: {
-
+      memberData: members
     }
   }
 }
