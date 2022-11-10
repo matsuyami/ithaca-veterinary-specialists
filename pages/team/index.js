@@ -6,7 +6,7 @@ import { Hero } from '../../components/hero/Hero'
 import { Member } from '../../components/member/Member'
 import { fetchMembers } from '../../utils/fetchMembers';
 
-export default function Team(){
+export default function Team({memberData}){
   const buttonOptions = {
     bg: 'var(--blue)',
     hoverColor: 'var(--primary-clr)',
