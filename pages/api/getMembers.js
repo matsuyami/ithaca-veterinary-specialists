@@ -6,6 +6,5 @@ const query = groq`
 
 export default async function handler(req, res) {
   const members = await sanityClient.fetch(query)
-
-  res.status(200).json({members})
+  return res.status(200).json({members})
 }
