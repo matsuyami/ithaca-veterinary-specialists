@@ -5,16 +5,16 @@ import styles from './Button.module.css'
 export const Button = ({
   url='/#', 
   backgroundColor='var(--primary-clr)', 
-  color='var(--white)', hoverColor='var(--blue)', children}) => {
+  color='var(--white)', hoverColor='var(--blue)', children, ...rest}) => {
 
   const [bg, setBg] = useState(backgroundColor)
 
   return (
     <button className={styles.button} 
-      style={{backgroundColor: bg, color: color}}
+      style={{backgroundColor: bg, color: color }} {...rest}
       onMouseOver={() => setBg(hoverColor)}
       onMouseOut ={() => setBg(backgroundColor)}
-      >
+    >
       <Link href={url}>
         <a>{children}</a>
       </Link>

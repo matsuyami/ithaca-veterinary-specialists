@@ -106,7 +106,11 @@ export const Header = () => {
                           <li><a href='#'>Referral Form</a></li>
                         </ul>
                     </li>
-                    <li><a href='#'>Contact</a></li>
+                    <li>
+                      <Link href='/contact'>
+                        <a>Contact</a>
+                      </Link>
+                    </li>
                   </ul>
                 </nav> 
               }
