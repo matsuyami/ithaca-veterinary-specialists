@@ -16,10 +16,7 @@ export const ContactForm = () => {
       <textarea className={styles.contactForm__textArea}></textarea>
 
       <div className={styles.contactForm__button}>
-        <Button backgroundColor={'var(--blue)'} color={'var(--white)'} 
-                hoverColor={'var(--secondary-clr)'}> 
-        Submit
-        </Button>
+        <input type='submit'/>
       </div>
     </form>
   )

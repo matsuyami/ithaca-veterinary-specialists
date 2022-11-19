@@ -15,7 +15,7 @@
 
 .contactForm__input {
   width: 100%;
-  padding: var(--spacer-md);
+  padding: var(--spacer-sm);
   font-size: 18px;
   font-family: var(--ff);
 }
@@ -35,7 +35,25 @@
   outline-color: var(--blue);
 }
 
-@media screen and (min-width: 800px){
+.contactForm__button {
+  max-width: 160px;
+}
+
+.contactForm__button > input {
+  font-weight: var(--fw-bold);
+  border: 0;
+  border-radius: var(--br);
+  margin-top: var(--spacer-lg);
+  margin-bottom: var(--spacer-lg);
+  padding: var(--spacer-md) var(--spacer-lg) var(--spacer-md) var(--spacer-lg);
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 100%
+}
+
+@media screen and (min-width: 800px) {
   .contactForm {
     max-width: 60vw;
   }
@@ -48,6 +66,9 @@
 @media screen and (min-width: 1024px){
   .contactForm {
     max-width: 600px;
+    padding: var(--spacer-lg);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: var(--br);
 
   }
 }
@@ -56,4 +77,6 @@
   .contactForm {
     max-width: 700px;
   }
+
 }
+
