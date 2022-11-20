@@ -66,6 +66,10 @@
   max-width: 160px;
 }
 
+.contactForm__button > input:hover{
+  background-color: var(--primary-clr);
+}
+
 .contactForm__button > input {
   font-weight: var(--fw-bold);
   border: 0;

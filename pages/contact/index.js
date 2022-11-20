@@ -2,13 +2,14 @@ import { ContactForm } from "../../components/contactForm/ContactForm";
 import { Footer } from "../../components/footer/Footer";
 import { Header } from "../../components/header/Header";
 import { Hero } from "../../components/hero/Hero";
+import Head from "next/head";
 
 export default function Contact() {
-    const buttonOptions = {
-      bg: 'var(--blue)',
-      hoverColor: 'var(--primary-clr)',
-      url: '/contact'
-    }
+  const buttonOptions = {
+    bg: 'var(--blue)',
+    hoverColor: 'var(--primary-clr)',
+    url: '/contact'
+  }
   return(
     <div>
       <Head>
