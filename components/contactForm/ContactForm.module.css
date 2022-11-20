@@ -1,4 +1,26 @@
 .contactForm {
+  margin: 0 auto;
+  padding: var(--spacer-md);
+}
+
+.contactForm__heading {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.contactForm__heading > svg {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.contactForm__header{
+  font-size: 2.25rem;
+  margin-right: 1rem;
+  color: var(--primary-clr);
+}
+
+.contactForm__form {
   display: flex;
   flex-direction: column;
   max-width: 80vw;
@@ -14,10 +36,12 @@
 }
 
 .contactForm__input {
-  width: 100%;
   padding: var(--spacer-sm);
   font-size: 18px;
   font-family: var(--ff);
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 0;
 }
 
 .contactForm__input:focus {
@@ -29,6 +53,9 @@
   padding: var(--spacer-md);
   font-size: 18px;
   font-family: var(--ff);
+  background-color: #f9f9f9;
+  border: 0;
+  width: 100%;
 }
 
 .contactForm__textArea:focus {
@@ -50,12 +77,31 @@
   text-transform: uppercase;
   background-color: var(--blue);
   color: var(--white);
-  width: 100%
+  width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+  .contactForm {
+    max-width: 520px;
+  }
+
+  .contactForm__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contactForm__input{
+    min-width: 200px;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .contactForm {
-    max-width: 60vw;
+    max-width: 700px;
+  }
+
+  .contactForm__input{
+    min-width: 250px;
   }
 
   .contactForm__textArea {
@@ -64,19 +110,19 @@
 }
 
 @media screen and (min-width: 1024px){
-  .contactForm {
-    max-width: 600px;
-    padding: var(--spacer-lg);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: var(--br);
+  .contactForm__heading > svg {
+    transform: scale(1.5);
+    max-height: 50px;
+  }
 
+  .contactForm__header{
+    font-size: 3rem;
+    margin-right: 1.75rem;
   }
 }
 
-@media screen and (min-width: 1248px){
-  .contactForm {
-    max-width: 700px;
+@media screen and (min-width:1440px){
+  .contactForm__header {
+    font-size: 3.5rem;
   }
-
 }
-
