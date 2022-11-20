@@ -11,6 +11,9 @@ export default function Contact() {
     }
   return(
     <div>
+      <Head>
+        <title>Ithaca Veterinary Specialists | Contact </title>
+      </Head>
       <Header/>
       <Hero title='Contact' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit. '
         imageUrl='/images/happy-shiba-dog.jpg' backgroundPos='center' buttonOptions={buttonOptions}/>
