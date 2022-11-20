@@ -5,7 +5,7 @@ export const ContactForm = () => {
   return (
     <div className={styles.contactForm}>
       <div className={styles.contactForm__heading}>
-        <h2 className={styles.contactForm__header}>Let's Talk</h2>
+        <h2 className={styles.contactForm__header}>Let&apos;s Talk</h2>
         <svg xmlns="http://www.w3.org/2000/svg">
           <image href="/images/waving_emoji.svg" height="40" width="40" />
         </svg>
