@@ -62,6 +62,15 @@
   outline-color: var(--blue);
 }
 
+.contactForm__error {
+  font-size: 0.875rem;
+  color: red;
+}
+
+.contactForm__status {
+  color: var(--blue);
+}
+
 .contactForm__button {
   max-width: 160px;
 }
