@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 
 export default async function (req, res){
-  const { name, email, message } = req.body
+  const { name, mail, message } = req.body
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -14,13 +14,13 @@ export default async function (req, res){
 
   try {
     await transporter.sendMail({
-      from: email,
+      from: mail,
       to: 'rhodes.naji@gmail.com',
       subject: 'Ithaca Veterinary Specialists - Contact Form',
       html: `
         <h1> Submitted from Ithaca Veterinary Specialists Contact Form </h1>
         <p><strong>Name:</strong> ${name} </p>
-        <p><strong>Email:</strong> ${email} </p>
+        <p><strong>Email:</strong> ${mail} </p>
         <p><strong>Message:</strong> ${message} </p>
       `
     })
