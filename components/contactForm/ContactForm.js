@@ -38,7 +38,7 @@ export const ContactForm = () => {
 
   const onSubmit = async (formInfo) => {
     const data = await formInfo 
-    if(data.name && data.mail && data.message){
+    if(data.name.trim() && data.mail.trim() && data.message.trim()){
       try {
         const res = await fetch('/api/contact', {
           method: 'POST',
@@ -60,6 +60,8 @@ export const ContactForm = () => {
       } catch(error) {
         setFormStatus('Something went wrong')
       }
+    } else {
+      setFormStatus('Something went wrong')
     }
   }
 
