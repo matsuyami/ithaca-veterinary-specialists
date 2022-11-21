@@ -58,7 +58,7 @@ export const ContactForm = () => {
           reset()
         }
       } catch(error) {
-        throw error
+        setFormStatus('Something went wrong')
       }
     }
   }
