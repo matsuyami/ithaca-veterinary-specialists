@@ -30,8 +30,9 @@ export default function Home() {
             </svg>
             <div className={styles.service__info}>
               <h2>Orthopedic Surgery</h2>
-              Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry&apos;s 
+               Orthopedic surgery procedures are
+               focused on the musculoskeletal system of animals. These vary 
+                from minimally invasive techniques to life-changing. 
             </div>
           </div>
           <div className={styles.service}>
@@ -41,9 +42,10 @@ export default function Home() {
             </svg>
             <div className={styles.service__info}>
               <h2>Neuro Surgery</h2>
-              Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry&apos;s 
             </div>
+            Neurosurgery is the surgical specialty that focuses on the 
+            treatment of diseases and injuries in the central nervous system, 
+            a complex system of nerves, or brain.
           </div>
           <div className={styles.service}>
             <svg viewBox="0 0 24 24">
@@ -52,8 +54,9 @@ export default function Home() {
             </svg>
             <div className={styles.service__info}>
               <h2>Cardiology Services</h2>
-              Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry&apos;s 
+              Cardiology, is a branch of veterinary medicine dealing with the 
+              diagnosis and treatment of diseases of the heart, blood vessels 
+              and lymphatic systems.
             </div>
           </div>
         </div>
@@ -73,11 +76,10 @@ export default function Home() {
           <div className={styles.learn__info}>
             <h2 className={styles.learn__header}>We <span className={styles.learn__love}>Love</span> our patients!</h2>
             <p className={styles.learn__text}> 
-                Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry&apos;s 
-                Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry&apos;s 
-            </p>
+            At Veterinary Specialists of Ithaca, we believe in providing 
+            compassionate veterinary medicine and surgical expertise that focus 
+            on the health and well-being of pets. We are here to help you care 
+            for your pet with the best possible service.</p>
             <hr className={styles.learn__rule} />
             <Button url='/about' backgroundColor={'var(--primary-clr)'} color={'var(--white'} 
               hoverColor={'var(--blue)'}>
@@ -89,10 +91,11 @@ export default function Home() {
             <section className={styles.visit}>
               <h2 className={styles.visit__header}>Ready for a visit?</h2>
               <p className={styles.visit__paragraph}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry&apos;s Lorem Ipsum is simply dummy text of the 
-              printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
-              </p>
+            Come talk to our vet team and meet the many specialists we have 
+            available at our surgical clinic. We strive to make your pet's visit as 
+            comfortable as possible and ensure that all questions are answered 
+            satisfactorily so you feel confident in our care. Please come by 
+            anytime to chat!</p>
             <Button url='/appointment' backgroundColor={'var(--blue)'} color={'var(--white'} 
               hoverColor={'var(--primary-clr)'}>
                 Contact
