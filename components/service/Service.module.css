@@ -1,0 +1,36 @@
+.service {
+  color: var(--primary-clr);
+  cursor: pointer;
+}
+
+.service__box {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 0 2px var(--primary-clr));
+  background-color: #fff;
+  padding: var(--spacer-md);
+}
+
+.service__name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+}
+
+
+.service__details{
+  margin-top: calc(var(--spacer-md) + var(--spacer-sm));
+}
+
+.service__arrow {
+  display: flex;
+  align-items: center;
+}
+
+.service__arrow > svg {
+  width: 24px;
+  height: 24px;
+}
+
+
