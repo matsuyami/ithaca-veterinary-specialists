@@ -92,7 +92,7 @@ export default function Home() {
               <h2 className={styles.visit__header}>Ready for a visit?</h2>
               <p className={styles.visit__paragraph}>
             Come talk to our vet team and meet the many specialists we have 
-            available at our surgical clinic. We strive to make your pet's visit as 
+            available at our surgical clinic. We strive to make your pet&apos;s visit as 
             comfortable as possible and ensure that all questions are answered 
             satisfactorily so you feel confident in our care. Please come by 
             anytime to chat!</p>
