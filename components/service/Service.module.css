@@ -1,6 +1,7 @@
 .service {
   color: var(--primary-clr);
   cursor: pointer;
+  margin-top: var(--spacer-md);
 }
 
 .service__box {

@@ -4,13 +4,16 @@ import { Header } from '../../components/header/Header'
 import { Service } from '../../components/service/Service'
 import { Hero } from '../../components/hero/Hero'
 import styles from './Services.module.css'
+import { fetchServices } from '../../utils/fetchServices'
 
-export default function Services(){
+export default function Services({services}){
   const buttonOptions = {
     bg: 'var(--blue)',
     hoverColor: 'var(--primary-clr)',
     url: '/contact'
   }
+
+  console.log(services)
 
   return(
     <div> 
@@ -45,15 +48,42 @@ export default function Services(){
         id mollis augue faucibus sit amet. Nunc porta turpis et nisl maximus cursus. Ut posuere enim ex, eu faucibus elit mollis sed. 
         In nec fermentum nisi. Nulla viverra faucibus nunc. Sed ut ante eu felis ultricies placerat.
         </p>
-        <div className={styles.servicesInfo__content}> 
-          <div className={styles.servicesInfo__list}>
-            <Service>Neurology</Service>
-            <Service>Cardiology</Service>
-            <Service>Potato</Service>
+        <div className={styles.servicesInfo__contentWrapper}>
+          <div className={styles.servicesInfo__content}> 
+            <div className={styles.servicesInfo__list}>
+              {services && 
+                services
+                  .slice(0, services.length / 2 + 1)
+                  .map(data => (
+                  <Service key={data._id} description={data.description}>{data.name}</Service>
+                ))
+              }
+            </div>
+          </div>
+          <div className={styles.servicesInfo__content}>
+            <div className={styles.servicesInfo__list}>
+              {services && 
+                services
+                  .slice(services.length / 2 + 1, services.length)
+                  .map(data => (
+                  <Service key={data._id} description={data.description}>{data.name}</Service>
+                ))
+              }
+            </div>
           </div>
         </div>
       </section>
       <Footer/>
     </div>
   )
+}
+
+
+export async function getStaticProps() {
+  const services = await fetchServices()
+  return {
+    props: {
+      services: services 
+    }
+  }
 }

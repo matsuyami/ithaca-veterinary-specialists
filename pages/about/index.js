@@ -22,10 +22,10 @@ export default function About(){
             <h2 className={styles.aboutInfo__header}> Lorem la ipsum le dolor sit ame </h2>
             <div className={styles.aboutInfo__content}> 
               <p>
-              </p>
                 euismod neque, non volutpat massa dignissim elementum. Cras gravida augue dui, eget vestibulum metus convallis eu. Sed egestas sapien facilisis nibh gravida, in mollis ligula egestas.
                 Suspendisse facilisis finibus felis, vitae mattis turpis blandit a. Nunc ut condimentum lorem. Quisque commodo aliquam dolor, 
                 id mollis augue faucibus sit amet. Nunc porta turpis et nisl maximus cursus. Ut posuere enim ex, eu faucibus elit mollis sed. 
+              </p>
               <p>
                 Aenean mauris sem, commodo eu rutrum id, ultrices in arcu. Integer nec velit augue. Phasellus vel feugiat diam. Duis ac 
                 sodales dui. Donec cursus diam commodo felis aliquam luctus vel pellentesque orci. Fusce ut lobortis augue. Fusce pretium 
