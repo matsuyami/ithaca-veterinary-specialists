@@ -3,6 +3,7 @@ import { Footer } from "../../components/footer/Footer";
 import { Header } from "../../components/header/Header";
 import { Hero } from "../../components/hero/Hero";
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function Contact() {
   const buttonOptions = {
@@ -10,6 +11,14 @@ export default function Contact() {
     hoverColor: 'var(--primary-clr)',
     url: '/contact'
   }
+
+  useEffect( () => {
+    function changeBodyBg() {
+      document.body.style.backgroundColor = 'white' 
+    }
+    changeBodyBg()
+  }, [])
+
   return(
     <div>
       <Head>
