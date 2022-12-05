@@ -70,10 +70,7 @@ export const Header = () => {
     
             <div className={styles.header__navigation}>
               <div className={styles.header__logo}>
-                <Image 
-                width={150}
-                height={75}
-                src='/images/logo.png' alt='logo'/>        
+                <img src="/images/VSI-logo-blue.png"/>
               </div>
               {isOpen && 
                 <nav className={styles.nav}>  

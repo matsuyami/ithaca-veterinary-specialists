@@ -45,12 +45,17 @@
     max-width: 150px;
     margin-left: 2rem;
   }
-  
+
+  .header__logo > img {
+    width: 155px;
+    height: 75px;
+  }
+
   .nav__list{
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: -17.88rem;
+    bottom: -19.88rem;
     left: 0;
     right: 0;
     background-color: var(--primary-clr);
@@ -96,7 +101,7 @@
     padding: 1rem;                                                                                                                                                      
     position: absolute;                                                                                                                                                 
     right: 0.5rem;                                                                                                                                                      
-    top: 1.5rem;                                                                                                                                                        
+    top: 1.9rem;                                                                                                                                                        
     cursor: pointer;                                                                                                                                                    
   }                                                                                                                                                                     
                                                                                                                                                                         
@@ -192,9 +197,33 @@
     }
   }
 
+  @media screen and (min-width: 1440px){
+    .header__logo {
+      margin-left: 4rem;
+    }
+    
+    .header__logo > img {
+      width: 255px;
+      height: 115px;
+    }
+
+    .nav__list > li{
+      font-size: 1.15rem;
+      margin-right: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 1700px){
+    .nav__list > li{
+      font-size: 1.15rem;
+      margin-right: 3rem;
+    }
+  }
+
   @media screen and (min-width:2000px){
     .nav__list {
       min-width: 45vw;
       justify-content: space-between;
     }
+
   }
