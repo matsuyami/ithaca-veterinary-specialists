@@ -43,7 +43,6 @@
   
   .header__logo {
     max-width: 150px;
-    margin-left: 2rem;
   }
 
   .header__logo > img {
@@ -145,6 +144,10 @@
     .header__navigation {
       align-items: center;
       justify-content: space-between;
+    }
+
+    .header__logo {
+      margin-left: var(--spacer-lg);
     }
 
     .nav__list {
