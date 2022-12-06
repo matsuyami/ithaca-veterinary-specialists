@@ -17,7 +17,7 @@ export default function Resources() {
         <title>Ithaca Veterinary Specialists | Appointments </title>
       </Head>
       <Header/>
-      <Hero title='Appointments' subHeading='dolor sit amet consectetur adipisicing elit. '
+      <Hero title='Resources' subHeading='dolor sit amet consectetur adipisicing elit. '
         imageUrl='/images/yawn-dog.jpg' backgroundPos='center' buttonOptions={buttonOptions}/>
       <div className={styles.resources}>
           <div className={styles.resources__items}>

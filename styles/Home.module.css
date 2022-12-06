@@ -6,7 +6,7 @@
     display: block;
     height: auto;
     min-height: 60vh;
-    max-height: 1080px;
+    max-height: 770px;
     width: 100%;
     object-fit: cover;
     background-color: var(--gray);
