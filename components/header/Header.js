@@ -97,11 +97,8 @@ export const Header = () => {
                         <a>Services</a>
                       </Link>
                     </li>
-                    <li className={styles.nav__nestedItem}><a href='#'>Resources</a>
-                        <ul className={styles.nav__nested}>
-                          <li><a href='#'>New Client</a></li>
-                          <li><a href='#'>Referral Form</a></li>
-                        </ul>
+                    <li>
+                      <Link href='/resources'>Resources</Link>
                     </li>
                     <li>
                       <Link href='/contact'>
