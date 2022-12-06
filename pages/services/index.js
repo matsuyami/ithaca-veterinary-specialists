@@ -13,8 +13,6 @@ export default function Services({services}){
     url: '/contact'
   }
 
-  console.log(services)
-
   return(
     <div> 
       <Head>

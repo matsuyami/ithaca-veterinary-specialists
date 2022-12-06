@@ -1,0 +1,107 @@
+.resources{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacer-md);
+  margin-top: var(--spacer-md);
+}
+
+.resources__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 20px;
+}
+
+.resources__referral, .resources__newPatient {
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.resources__referral {
+  background-color: var(--blue);
+  border-radius: var(--spacer-md) var(--spacer-md) 0 0; 
+}
+
+.resources__newPatient {
+  background-color: var(--primary-clr);
+  border-radius: 0 0 var(--spacer-md) var(--spacer-md); 
+}
+
+.resources__notice{
+  font-size: 1.15rem;
+}
+
+.resources__email {
+  color: var(--blue);
+  font-weight: var(--fw-bold); 
+}
+
+.resources__cancellation {
+  border: 2px solid var(--blue);
+  border-radius: calc(2 * var(--br));
+  padding: var(--spacer-lg) var(--spacer-md) var(--spacer-lg) var(--spacer-md);
+  margin-top: var(--spacer-md);
+  margin-bottom: var(--spacer-md);
+  text-align: left;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 575px){
+  .resources__items {
+    flex-direction: row;
+  }
+
+  .resources__items{
+    font-size: 1.375rem;
+  }
+
+  .resources__referral {
+    border-radius: var(--spacer-md) 0 0 var(--spacer-md);
+  }
+
+  .resources__newPatient {
+    border-radius: 0 var(--spacer-md) var(--spacer-md) 0;
+  }
+
+  .resources__notice {
+    font-size: 1.325rem;
+  }
+
+  .resources__cancellation {
+    font-size: 1.125rem;
+    max-width: 660px;
+  }
+}
+
+@media screen and (min-width: 1291px){
+  .resources__items{
+    font-size: 2rem;
+  }
+
+  .resources__referral, .resources__newPatient{
+    width: 500px;
+  }
+
+  .resources__referral {
+    border-radius: var(--spacer-md) 0 0 var(--spacer-md);
+  }
+
+  .resources__newPatient {
+    border-radius: 0 var(--spacer-md) var(--spacer-md) 0;
+  }
+
+  .resources__notice {
+    font-size: 1.5rem;
+  }
+
+  .resources__cancellation {
+    font-size: 1.35rem;
+    max-width: 1000px;
+  }
+}
