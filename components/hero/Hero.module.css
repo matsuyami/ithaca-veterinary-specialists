@@ -3,6 +3,7 @@
   height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--gray);
 }
 
 .banner__info {
