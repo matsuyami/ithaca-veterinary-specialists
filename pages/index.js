@@ -6,6 +6,11 @@ import styles from '../styles/Home.module.css'
 import { Button } from '../components/button/Button'
 
 export default function Home() {
+  const buttonOptions = {
+    bg: 'var(--blue)',
+    hoverColor: 'var(--primary-clr)',
+    url: '/contact'
+  }
   return (
     <>
       <Head>
@@ -19,6 +24,13 @@ export default function Home() {
               <source src="/video/dog_grass.webm" type="video/webm"/>
               Your browser does not support this video file.
             </video>
+              <div className={styles.hero__info}>
+                <h1 className={styles.hero__header}>Lorem Ipsu</h1>
+                <div className={styles.hero_text}>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+                <Button url={buttonOptions.url} 
+                    backgroundColor={buttonOptions.bg} 
+                    hoverColor={buttonOptions.hoverColor}>Call Now</Button>
+              </div>
           </div>
 
         <div className={styles.surgery}>Services</div>

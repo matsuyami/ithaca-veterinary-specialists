@@ -5,6 +5,8 @@
   color: var(--primary-clr);
   letter-spacing: 0.5px;
   padding: var(--spacer-lg);
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .servicesInfo__header{
@@ -26,6 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    max-width: 1240px;
   }
 }
 
