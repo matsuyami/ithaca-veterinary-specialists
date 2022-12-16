@@ -1,4 +1,5 @@
 import styles from './Footer.module.css'
+import Link from 'next/link'
 
 export const Footer = () => {
     return (
@@ -12,12 +13,12 @@ export const Footer = () => {
             <section className={styles.footer__section}>
               <h2 className={styles.footer__header}>Navigation</h2>
               <ul className={styles.footer__nav}>
-                <li><a href='/'>Home</a></li> 
-                <li><a href='/about'>About</a></li> 
-                <li><a href='team'>Our Team</a></li> 
-                <li><a href='/services'> Services </a></li> 
-                <li><a href='resources'> Resources </a></li> 
-                <li><a href='/contact'>Contact</a></li> 
+                <li><Link href='/'>Home</Link></li> 
+                <li><Link href='/about'>About</Link></li> 
+                <li><Link href='team'>Our Team</Link></li> 
+                <li><Link href='/services'> Services </Link></li> 
+                <li><Link href='resources'> Resources </Link></li> 
+                <li><Link href='/contact'>Contact</Link></li> 
               </ul>
             </section>
 
