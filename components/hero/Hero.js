@@ -12,7 +12,7 @@ export const Hero = ({ title, subHeading, backgroundPos, imageUrl, buttonOptions
         <div className={styles.banner__text}>{subHeading}</div>
         <Button url={buttonOptions.url} 
                 backgroundColor={buttonOptions.bg} 
-                hoverColor={buttonOptions.hoverColor}>Contact</Button>
+                hoverColor={buttonOptions.hoverColor}>Call Now</Button>
       </div>
     </section>
   )

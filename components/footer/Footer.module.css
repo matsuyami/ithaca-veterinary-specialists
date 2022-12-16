@@ -16,14 +16,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
-  
+
+  .footer__nav {
+    width: 270px;
+  }
+
+  .footer__nav > li {
+    margin-bottom: var(--spacer-md);
+  }
+
   .footer__header {
     text-transform: uppercase;
-    letter-spacing: 2.5px;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    letter-spacing: 2px;
+    margin-top: var(--spacer-md);
+    margin-bottom: var(--spacer-md);
   }
   
   .footer__hours {
@@ -37,4 +46,14 @@
   
   .footer__contact {
     color: var(--white);
+  }
+
+  @media screen and (min-width:560px){
+    .footer__info {
+      flex-direction: row;
+    }
+
+    .footer__section{ 
+      height: 315px;
+    }
   }

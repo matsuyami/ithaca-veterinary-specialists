@@ -74,7 +74,7 @@ export default function Home() {
         </div>
         <div className={styles.services__more}>
           <hr className={styles.rule}/>
-          <a className={styles.services__moreLink} href='#'>View more services</a>
+          <a className={styles.services__moreLink} href='/services'>View more services</a>
         </div>
 
         <section className={styles.learn}>
@@ -83,7 +83,7 @@ export default function Home() {
             className={styles.learn__image}
             width={518}
             height={388}
-            src='/images/flower_dog.jpg' alt='dog' />
+            src='/images/flower_dog.jpg' alt='flower dog' />
           </picture>
           <div className={styles.learn__info}>
             <h2 className={styles.learn__header}>We <span className={styles.learn__love}>Love</span> our patients!</h2>

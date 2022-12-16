@@ -8,28 +8,42 @@ export const Footer = () => {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade">
           </iframe>
-          <section className={styles.footer__info}>
-            <h2 className={styles.footer__header}>Visit our hospital</h2>
-            <div className={styles.footer__hours}>
-              <div className={styles.footer__day}>
-                <p>Monday-Friday</p>
-                <p>9:00am - 6:00pm</p>
+          <div className={styles.footer__info}>
+            <section className={styles.footer__section}>
+              <h2 className={styles.footer__header}>Navigation</h2>
+              <ul className={styles.footer__nav}>
+                <li><a href='/'>Home</a></li> 
+                <li><a href='/about'>About</a></li> 
+                <li><a href='team'>Our Team</a></li> 
+                <li><a href='/services'> Services </a></li> 
+                <li><a href='resources'> Resources </a></li> 
+                <li><a href='/contact'>Contact</a></li> 
+              </ul>
+            </section>
+
+            <section className={styles.footer__section}>
+              <h2 className={styles.footer__header}>Visit our hospital</h2>
+              <div className={styles.footer__hours}>
+                <div className={styles.footer__day}>
+                  <p>Monday-Friday</p>
+                  <p>9:00am - 6:00pm</p>
+                </div>
+                <div className={styles.footer__day}>
+                  <p>Saturday</p>
+                  <p>9:00am - 6:00pm</p>
+                </div>
+                <div className={styles.footer__day}>
+                  <p>Sunday</p>
+                  <p>9:00am - 6:00pm</p>
+                </div>
               </div>
-              <div className={styles.footer__day}>
-                <p>Saturday</p>
-                <p>9:00am - 6:00pm</p>
-              </div>
-              <div className={styles.footer__day}>
-                <p>Sunday</p>
-                <p>9:00am - 6:00pm</p>
-              </div>
-            </div>
-            <p className={styles.footer__address}>
-            <strong><a className={styles.footer__contact} href='#'>559-559-559</a></strong>
-            <br/>
-            <a className={styles.footer__contact} href='#'>5555 E Testing Ave<br/>Freeville, NY 11111</a>
-            </p>
-          </section>
+              <p className={styles.footer__address}>
+              <strong><a className={styles.footer__contact} href='#'>559-559-559</a></strong>
+              <br/>
+                <a className={styles.footer__contact} href='#'>5555 E Testing Ave<br/>Freeville, NY 11111</a>
+              </p>
+            </section>
+          </div>
         </footer>
     )
 }
