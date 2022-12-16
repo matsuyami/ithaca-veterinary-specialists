@@ -19,7 +19,7 @@ export default function Services({services}){
         <title>Ithaca Veterinary Specialists | Services </title> 
       </Head>
       <Header/>
-      <Hero title='Our Team' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit.' 
+      <Hero title='Services' subHeading='Lorem, ipsum dolor sit amet consectetur adipisicing elit.' 
       imageUrl='/images/couch-dog.jpg' backgroundPos='center' buttonOptions={buttonOptions}/>  
       <section className={styles.servicesInfo}>
         <h2 className={styles.servicesInfo__header}> Lorem la ipsum le dolor sit ame </h2>
