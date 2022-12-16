@@ -1,7 +1,8 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
 import { Header } from '../components/header/Header'
 import { Footer } from '../components/footer/Footer'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button } from '../components/button/Button'
 
@@ -74,7 +75,7 @@ export default function Home() {
         </div>
         <div className={styles.services__more}>
           <hr className={styles.rule}/>
-          <a className={styles.services__moreLink} href='/services'>View more services</a>
+          <Link className={styles.services__moreLink} href='/services'>View more services</Link>
         </div>
 
         <section className={styles.learn}>
